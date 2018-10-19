@@ -11,6 +11,7 @@ class evalScriptText {
 
     static void main(String[] args) {
 
+        /*
         groovyShell();
         //test2();
         //test3();
@@ -19,6 +20,9 @@ class evalScriptText {
         //println("x+y="+z);
 
         println test("abc", "def", "ghi");
+
+        2.upto(5, { println it })
+        */
     }
 
     static groovyShell(){
@@ -76,7 +80,7 @@ class evalScriptText {
 
     }
 
-    static JSONArray test(String str1, String str2, String str3) {
+    static test(String str1, String str2, String str3) {
         println(str1 + "  " + str2 + "  " + str3);
 
         def clos = {println "Hello ${it}"};
@@ -86,6 +90,4 @@ class evalScriptText {
 
         return JSON.parseArray(jsonString);
     }
-
-
 }

@@ -5,6 +5,33 @@
     <title>批量上传文件</title>
 </head>
 <body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+
+
+function sbmt(){
+debugger;
+    $.ajax({
+        url: 'http://172.30.10.61:8088/MediabuyTestApi/AddTemporaryIncome',
+        type: 'post',
+            data: {"Product_Code":"0001",
+                "Product_Est_Inc":2000.25,
+                "Product_Est_Cost":1800,
+                "Product_Date_Month":"201807",
+                "Currency":"美元",
+                "Contract_Code":"CL2017000015"
+               },
+        success: function (result) {
+            debugger;
+        },
+        error : function(e){
+            debugger;
+        }
+    });
+}
+
+</script>
+<input type="button" onclick="sbmt()" value="测试"/>
 <form name="serForm" action="/SpringMVC006/fileUpload" method="post"  enctype="multipart/form-data">
     <h1>采用流的方式上传文件</h1>
     <input type="file" name="file">
