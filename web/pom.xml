@@ -58,6 +58,12 @@
 			<version>1.2.47</version>
 		</dependency>
 
+
+		<dependency>
+			<groupId>org.apache.hbase</groupId>
+			<artifactId>hbase-client</artifactId>
+			<version>1.2.4</version>
+		</dependency>
 		<!--<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
